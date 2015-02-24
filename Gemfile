@@ -4,6 +4,10 @@ else
   source 'https://ruby.taobao.org'
 end
 
+# Uncomment following lines to deploy to heroku
+# https://devcenter.heroku.com/articles/rails4
+ruby '2.0.0'
+gem 'rails_12factor', group: :production
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.6'
