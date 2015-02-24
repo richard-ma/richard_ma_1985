@@ -54,6 +54,5 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
 
-  #resource :wechats, only:[:show, :create, :index]
-  resource :wechats, only:[:show, :create]
+  resource :wechats, only:[:show, :create, :index]
 end
