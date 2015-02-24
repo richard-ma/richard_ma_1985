@@ -1,10 +1,12 @@
-class WechatController < ApplicationController
+class WechatsController < ApplicationController
   def index
     if params['echostr']
-      p params['echostr']
+      @echostr = params['echostr']
     else
-      p 'hello, This is richard-ma-1985'
+      @echostr = 'hello, This is richard-ma-1985'
     end
+
+    render layout: "wechats"
   end
 
   wechat_responder
