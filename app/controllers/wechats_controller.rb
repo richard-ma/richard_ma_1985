@@ -1,13 +1,13 @@
 class WechatsController < ApplicationController
-  def index
-    if params['echostr']
-      @echostr = params['echostr']
-    else
-      @echostr = 'hello, This is richard-ma-1985'
-    end
+  #def index
+    #if params['echostr']
+      #@echostr = params['echostr']
+    #else
+      #@echostr = 'hello, This is richard-ma-1985'
+    #end
 
-    render layout: "wechats"
-  end
+    #render layout: "wechats"
+  #end
 
   wechat_responder
 
