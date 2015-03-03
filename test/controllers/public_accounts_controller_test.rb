@@ -18,7 +18,7 @@ class PublicAccountsControllerTest < ActionController::TestCase
 
   test "should create public_account" do
     assert_difference('PublicAccount.count') do
-      post :create, public_account: {  }
+      post :create, public_account: { name: @public_account.name }
     end
 
     assert_redirected_to public_account_path(assigns(:public_account))
@@ -35,7 +35,7 @@ class PublicAccountsControllerTest < ActionController::TestCase
   end
 
   test "should update public_account" do
-    patch :update, id: @public_account, public_account: {  }
+    patch :update, id: @public_account, public_account: { name: @public_account.name }
     assert_redirected_to public_account_path(assigns(:public_account))
   end
 

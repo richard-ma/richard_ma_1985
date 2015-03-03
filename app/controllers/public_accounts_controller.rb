@@ -69,6 +69,6 @@ class PublicAccountsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def public_account_params
-      params[:public_account]
+      params.require(:public_account).permit(:name)
     end
 end
