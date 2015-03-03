@@ -1,12 +1,3 @@
-GIT
-  remote: https://github.com/skinnyworm/wechat-rails
-  revision: d7ad861645181dbb925c6f01c3b42e74e92d6211
-  specs:
-    wechat-rails (0.1.1)
-      nokogiri (>= 1.6.0)
-      rails (>= 3.2.14)
-      rest-client
-
 GEM
   remote: https://ruby.taobao.org/
   specs:
@@ -62,7 +53,7 @@ GEM
     mini_portile (0.6.2)
     minitest (5.5.1)
     multi_json (1.10.1)
-    netrc (0.10.2)
+    multi_xml (0.5.5)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
     pg (0.16.0)
@@ -92,9 +83,9 @@ GEM
     rake (10.4.2)
     rdoc (4.2.0)
       json (~> 1.4)
-    rest-client (1.7.3)
-      mime-types (>= 1.16, < 3.0)
-      netrc (~> 0.7)
+    roxml (3.3.1)
+      activesupport (>= 2.3.0)
+      nokogiri (>= 1.3.3)
     sass (3.2.19)
     sass-rails (4.0.5)
       railties (>= 4.0.0, < 5.0)
@@ -124,6 +115,12 @@ GEM
     uglifier (2.7.0)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
+    weixin_rails_middleware (1.3.0)
+      multi_xml (>= 0.5.2)
+      nokogiri (>= 1.6.1)
+      rails (>= 3.1)
+      railties (>= 3.1)
+      roxml
 
 PLATFORMS
   ruby
@@ -140,4 +137,4 @@ DEPENDENCIES
   spring
   turbolinks
   uglifier (>= 1.3.0)
-  wechat-rails!
+  weixin_rails_middleware

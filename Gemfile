@@ -46,4 +46,4 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-gem 'wechat-rails', git:"https://github.com/skinnyworm/wechat-rails"
+gem 'weixin_rails_middleware'
