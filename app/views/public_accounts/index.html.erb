@@ -10,8 +10,9 @@
   <tbody>
     <% @public_accounts.each do |public_account| %>
       <tr>
-        <td><%= weixin_engine.weixin_server_url(user.weixin_secret_key) %></td>
-        <td><%= user.weixin_token %></td>
+        <td><%= public_account.name %></td>
+        <td><%= weixin_engine.weixin_server_url(public_account.weixin_secret_key) %></td>
+        <td><%= public_account.weixin_token %></td>
         <td><%= link_to 'Show', public_account %></td>
         <td><%= link_to 'Edit', edit_public_account_path(public_account) %></td>
         <td><%= link_to 'Destroy', public_account, method: :delete, data: { confirm: 'Are you sure?' } %></td>
