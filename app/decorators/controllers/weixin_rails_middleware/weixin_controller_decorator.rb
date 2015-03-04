@@ -52,7 +52,7 @@ WeixinRailsMiddleware::WeixinController.class_eval do
       # 如果开启了语音翻译功能，@keyword则为翻译的结果
       # reply_text_message("回复语音信息: #{@keyword}")
       #reply_voice_message(generate_voice(@media_id))
-      reply_text_message(@weixin_message.Recognition)
+      reply_text_message("Your voice: #{@weixin_message.Recognition}")
     end
 
     # <MediaId><![CDATA[media_id]]></MediaId>
