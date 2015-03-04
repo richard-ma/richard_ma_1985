@@ -46,4 +46,4 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-gem 'weixin_rails_middleware'
+gem 'weixin_rails_middleware', git:'https://github.com/richard-ma/weixin_rails_middleware', branch:'add-voice-recognition'
