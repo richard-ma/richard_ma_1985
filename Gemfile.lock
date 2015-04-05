@@ -1,7 +1,6 @@
 GIT
-  remote: https://github.com/richard-ma/weixin_rails_middleware
-  revision: 536fcc70cde03061e92310917361bebb46c8e1ba
-  branch: add-voice-recognition
+  remote: https://github.com/lanrion/weixin_rails_middleware
+  revision: 1b9f76e00445b6f2b6a6864ac4f3e696071eec4b
   specs:
     weixin_rails_middleware (1.3.0)
       multi_xml (>= 0.5.2)
